@@ -1,0 +1,128 @@
+<html>
+	<head>													
+		<title>			Hamro bazar		</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<div class="logo">
+					<img src="hamro.png" width="100"/>
+				</div>	
+				<div class="search">
+					<input type="text" />
+				</div>
+				<div class="button-section">
+					<button>post free</button>
+					<button>login</button>
+					<button>signup</button>
+				</div>
+			
+			</header>
+			<div class="main">
+					<div class="main-left">
+						<div class="left-header">
+							Category
+						</div>
+						<div class="left-main">
+							<ul>
+								<li>list one</li>
+								<li>list two</li>
+								<li>list three</li>
+							</ul>
+						</div>
+					</div>
+					<div class="main-right">
+							<form method="POST" action="http://localhost:8080">
+
+								<div>
+									<label for="username">Username</label>
+									<input id="username" type="text" name="username" />
+								</div>
+								<div>
+									<label for="password">Password</label>
+									<input type="password" name="password" id="password" />
+								</div>
+								<div>
+									<label>Number</label>
+									<input type="number" name="number" />
+								</div>
+								<div>
+									<label>Gender</label>
+									Male:<input type="radio" name="gender" value="male"/>
+									Female:<input type="radio" name="gender"
+									value="female" />
+								</div>
+								<div>
+									<label>Select games</label>
+									Futsal:<input type="checkbox" value="futsal" name="game"/>
+									BasketBall:<input type="checkbox" value="basketball" name="game"/>
+									Chess:<input type="checkbox" value="chess" name="game"/>
+								</div>
+								<div>
+									<label>Select Film</label>
+									<select name="film">
+										<option value="film1">Film1</option>
+										<option value="film2">Film2</option>
+										<option value="film3">Film3</option>
+									</select>
+								</div>
+								<div>
+									<textarea name="description">
+
+									</textarea>
+								</div>
+								<div>
+									<input type="submit"  value="Save"/>
+								
+								</div>
+
+
+							</form>
+
+							<table border="1">
+								<thead>
+										<tr>
+											<th>Id</th>
+											<th>Name</th>
+											<th>Address</th>
+											<th>Overall Data</th>
+											<th>Action</th>
+										</tr>
+								</thead>
+								<tbody>
+										<tr>
+											<td rowspan="2">1</td>
+											<td>HAri</td>
+											<td>gokarna</td>
+											<td rowspan="3">data for all</td>
+											<td><button>edit</button></td>
+										</tr>
+										<tr>
+											
+											<td>Sabin</td>
+											<td>gokarna</td>
+											<td><button>edit</button></td>
+
+										</tr>
+										
+										<tr>
+											<td>3</td>
+											<td>Rabin</td>
+											<td>gokarna</td>
+											<td><button>edit</button></td>
+
+										</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="4">summary</td>
+									</tr>
+								</tfoot>
+							</table>
+					</div>
+			</div>
+		</div>
+
+	</body>
+</html>
